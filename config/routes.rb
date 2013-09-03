@@ -1,4 +1,9 @@
 Photogur::Application.routes.draw do
+
+  get 'pictures' => 'pictures#index'
+
+end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
