@@ -1,8 +1,11 @@
 <h1>Pictures: this is the Index View </h1>
 
 <% @pictures.each do |picture| %>
-<p> <%= picture[:title] %>, <%= picture[:artist] %> </p>
-<img src="<% picture[:url] %>"> 
+  
+  <p> <%= picture[:title] %>, <%= picture[:artist] %> 
+  </p>
+  <img src="<%= picture[:url] %>"> 
+
 <% end  %>
 
 <p>Find me in app/views/pictures/index.html.erb</p>
