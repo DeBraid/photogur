@@ -1,11 +1,8 @@
-<h1>Pictures: this is the Index View </h1>
+<h1> Pictures: Index View</h1>
 
 <% @pictures.each do |picture| %>
-  
-  <p> <%= picture[:title] %>, <%= picture[:artist] %> 
-  </p>
-  <img src="<%= picture[:url] %>"> 
-
-<% end  %>
-
-<p>Some Text here</p>
+<p> 
+  <%= picture[:title] %>, <%= picture[:artist] %> </p>
+</p>
+  <img src="<%= picture[:url]%>">
+<% end %>
