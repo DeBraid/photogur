@@ -1,13 +1,17 @@
 Photogur::Application.routes.draw do
+  resources  :pictures 
   root :to => 'pictures#index'
-
-  get 'pictures' => 'pictures#index'
-
-  post 'pictures' => 'pictures#create'
-  get 'pictures/new' => 'pictures#new'
-
-  get 'pictures/:id' => 'pictures#show'
 end
+
+  # get 'pictures' => 'pictures#index'
+
+  # post 'pictures' => 'pictures#create'
+  # get 'pictures/new' => 'pictures#new'
+
+  # get 'pictures/:id/edit' => 'picutres#edit', as: 'edit_picture'
+  # put 'pictures/:id' => 'pictures#update', as: 'update_picture'
+
+  # get 'pictures/:id' => 'pictures#show'
 
 
   # The priority is based upon order of creation:

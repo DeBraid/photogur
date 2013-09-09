@@ -1,8 +1,10 @@
 <h1> Pictures: Index View</h1>
 
+<%= link_to "New Pictures", "/pictures/new" %>
+
 <% @pictures.each do |picture| %>
-<p> 
-  <%= picture[:title] %>, <%= picture[:artist] %> </p>
-</p>
-  <img src="<%= picture[:url]%>">
+<%= puts "moo" %>
+<p><%= picture[:title] %>, <%= picture[:artist] %> </p>
+  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+
 <% end %>
